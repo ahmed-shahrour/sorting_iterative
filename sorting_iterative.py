@@ -41,9 +41,8 @@ def insertion_sort(items):
   TODO: Running time: O(n ^ 2)
   TODO: Memory usage: O(1)"""
   for i in range(len(items)):
-    key = items[i]
     j = i - 1;
     while j >= 0 and items[i] < items[j]:
       items[j + 1] = items[j]
       j -= 1
-    items[j + 1] = key
+    items[j + 1] = items[i]
